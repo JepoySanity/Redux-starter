@@ -7,12 +7,11 @@ const unsubscribe = store.subscribe(()=>{
 
 store.dispatch(bugAdded("test 1"));
 
-unsubscribe();
-
-store.dispatch({
-  type: actions.BUG_REMOVED,
-  payload: {
-    id: 1,
-  },
-});
-console.log(store.getState());
+// unsubscribe();
+// store.dispatch({
+//   type: actions.BUG_REMOVED,
+//   payload: {
+//     id: 1,
+//   },
+// });
+// console.log(store.getState());
